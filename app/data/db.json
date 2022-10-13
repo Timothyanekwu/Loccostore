@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "img": "/image/2.jpg",
+      "name": "Bag",
+      "price": 40,
+      "category": "bag"
+    },
+    {
+      "id": 1,
+      "img": "/image/4.jpg",
+      "name": "Shoe",
+      "price": 44,
+      "category": "shoe"
+    },
+    {
+      "id": 2,
+      "img": "/image/4.jpg",
+      "name": "Flask",
+      "price": 44,
+      "category": "electronics"
+    },
+    {
+      "id": 3,
+      "img": "/image/2.jpg",
+      "name": "Phone stand",
+      "price": 40,
+      "category": "ankara"
+    },
+    {
+      "id": 4,
+      "img": "/image/2.jpg",
+      "name": "Bag",
+      "price": 40,
+      "category": "bag"
+    },
+    {
+      "id": 5,
+      "img": "/image/4.jpg",
+      "name": "Shoe",
+      "price": 44,
+      "category": "shoe"
+    },
+    {
+      "id": 6,
+      "img": "/image/4.jpg",
+      "name": "Flask",
+      "price": 44,
+      "category": "electronics"
+    },
+    {
+      "id": 7,
+      "img": "/image/2.jpg",
+      "name": "Phone stand",
+      "price": 40,
+      "category": "ankara"
+    },
+    {
+      "id": 8,
+      "img": "/image/2.jpg",
+      "name": "Bag",
+      "price": 40,
+      "category": "bag"
+    },
+    {
+      "id": 9,
+      "img": "/image/4.jpg",
+      "name": "Shoe",
+      "price": 44,
+      "category": "shoe"
+    },
+    {
+      "id": 10,
+      "img": "/image/4.jpg",
+      "name": "Flask",
+      "price": 44,
+      "category": "electronics"
+    },
+    {
+      "id": 11,
+      "img": "/image/2.jpg",
+      "name": "Phone stand",
+      "price": 40,
+      "category": "ankara"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "img": "/image/4.jpg",
+      "name": "Shoe",
+      "price": 44,
+      "category": "shoe"
+    },
+    {
+      "id": 2,
+      "img": "/image/2.jpg",
+      "name": "Bag",
+      "price": 40,
+      "category": "bag"
+    }
+  ]
+}

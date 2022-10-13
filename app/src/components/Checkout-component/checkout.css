@@ -1,0 +1,24 @@
+#cont {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart-list {
+  width: 90%;
+  margin-top: 50px;
+  border: 1px solid green;
+}
+
+#item {
+  height: 50px;
+  width: 444px;
+  background-color: red;
+  border: 1px solid red;
+}
+
+#cart-item-image {
+  height: 100%;
+  width: 100px;
+}
