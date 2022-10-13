@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "img": "/image/1.jpg",
+      "name": "Vingage Bag: Custom made imported bag",
+      "price": 40,
+      "category": "bag",
+      "sold": 23
+    },
+    {
+      "id": 1,
+      "img": "/image/2.jpg",
+      "name": "Nike Shoes: Model 549TG Chinese",
+      "price": 44,
+      "category": "shoe",
+      "sold": 1
+    },
+    {
+      "id": 2,
+      "img": "/image/3.jpg",
+      "name": "Loga Flask: twin pack for children",
+      "price": 44,
+      "category": "electronics",
+      "sold": 9
+    },
+    {
+      "id": 3,
+      "img": "/image/4.jpg",
+      "name": "JBL Phone stand for phones",
+      "price": 40,
+      "category": "ankara",
+      "sold": 16
+    },
+    {
+      "id": 4,
+      "img": "/image/5.jpg",
+      "name": "Bag",
+      "price": 40,
+      "category": "bag",
+      "sold": 21
+    },
+    {
+      "id": 5,
+      "img": "/image/6.jpg",
+      "name": "Shoe",
+      "price": 44,
+      "category": "shoe",
+      "sold": 20
+    },
+    {
+      "id": 6,
+      "img": "/image/9.jpg",
+      "name": "Flask",
+      "price": 44,
+      "category": "electronics",
+      "sold": 3
+    },
+    {
+      "id": 7,
+      "img": "/image/9.jpg",
+      "name": "Phone stand",
+      "price": 40,
+      "category": "ankara",
+      "sold": 11
+    },
+    {
+      "id": 8,
+      "img": "/image/1.jpg",
+      "name": "Bag",
+      "price": 40,
+      "category": "bag",
+      "sold": 14
+    },
+    {
+      "id": 9,
+      "img": "/image/2.jpg",
+      "name": "Shoe",
+      "price": 44,
+      "category": "shoe",
+      "sold": 23
+    },
+    {
+      "id": 10,
+      "img": "/image/3.jpg",
+      "name": "Flask",
+      "price": 44,
+      "category": "electronics",
+      "sold": 1
+    },
+    {
+      "id": 11,
+      "img": "/image/4.jpg",
+      "name": "Phone stand",
+      "price": 40,
+      "category": "ankara",
+      "sold": 18
+    }
+  ],
+  "cart": []
+}

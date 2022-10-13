@@ -1,11 +1,13 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react"; //uselocation\
 
 const DataContext = createContext();
 
 export const Data = ({ children }) => {
-  const [cartNumber, setCartNumber] = useState(0);
   const [cart, setCart] = useState([]);
   const [items, setItems] = useState([]);
+  const [total, setTotal] = useState(1);
+  const [desk, setDesk] = useState(window.innerWidth);
+  // const [product, setProduct] = useState(prod);
 
   useEffect(() => {
     const getData = async () => {
@@ -22,7 +24,16 @@ export const Data = ({ children }) => {
     getData();
   }, []);
 
-  const addCart = async (product) => {
+  const up = () => {
+    setDesk(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", up);
+    return () => window.removeEventListener("resize", up);
+  });
+
+  const addCart = async (product, e) => {
+    e.stopPropagation();
     const res = await fetch("http://localhost:5000/cart", {
       method: "POST",
       headers: {
@@ -32,10 +43,19 @@ export const Data = ({ children }) => {
     });
 
     const result = res.json();
-
     setCart([...cart, result]);
-    setCartNumber(cartNumber + 1);
   };
+
+  /* */
+  const del = async (id) => {
+    await fetch(`http://localhost:5000/cart/${id}`, {
+      method: "DELETE",
+    });
+
+    setCart(cart.filter((item) => item.id !== id));
+  };
+
+  /* */
 
   return (
     <DataContext.Provider
@@ -43,8 +63,11 @@ export const Data = ({ children }) => {
         items,
         addCart,
         setItems,
-        cartNumber,
         cart,
+        desk,
+        total,
+        setTotal,
+        del,
       }}
     >
       {children}

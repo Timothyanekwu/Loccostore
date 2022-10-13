@@ -1,23 +1,49 @@
 import { useContext } from "react";
 import DataContext from "../../context/context";
+import { MdHelpOutline } from "react-icons/md";
 import "./header.css";
 
 const Head = () => {
-  const { cartNumber } = useContext(DataContext);
+  const { desk, cart } = useContext(DataContext);
 
   return (
     <div id="head">
-      <span id="cat"></span>
-      <div id="title">LOCCO STORE</div>
+      {desk > 769 ? (
+        <div>
+          <div id="dwn">
+            {/* <div id="cat-icon">icons</div> */}
+            <h2 id="title">LOCCO</h2>
 
-      <div id="form">
-        <input type="text" id="input" />
-        <input type="submit" id="submit" value="Search" />
-      </div>
+            <div id="form">
+              <input type="text" id="input" placeholder="Search for product" />
+              <input type="button" id="submit" />
+            </div>
 
-      <div>
-        <div id="cart-number">{cartNumber}</div>
-      </div>
+            <div id="nav-right">
+              {/* <div id="help">Help</div> */}
+              <MdHelpOutline id="help" />
+              <div id="cart-number">{cart.length}</div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div>
+          <div id="dwn">
+            <div id="cat-icon">icons</div>
+            <h2 id="title">LOCCO</h2>
+
+            <div id="nav-right">
+              <div id="help">Help</div>
+              <div id="cart-number">{cart.length}</div>
+            </div>
+          </div>
+
+          <div id="form">
+            <input type="text" id="input" />
+            <input type="button" id="submit" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

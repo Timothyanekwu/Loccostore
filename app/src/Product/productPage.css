@@ -1,0 +1,30 @@
+#product-info-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(212, 212, 212);
+  padding: 5px;
+  min-height: 800px;
+  margin-top: 40px;
+}
+
+#specification {
+  padding: 5px;
+  display: flex;
+  height: 600px;
+  border: 1px solid red;
+}
+
+#info-img-cont {
+  background-color: rgb(250, 250, 250);
+  width: 420px;
+  height: 80%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
+#info-img {
+  max-width: 100%;
+  height: 100%;
+}

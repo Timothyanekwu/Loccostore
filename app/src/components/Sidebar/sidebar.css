@@ -2,13 +2,52 @@
   display: none;
 }
 
-@media only screen and (min-width: 969px) {
+@media only screen and (min-width: 769px) {
   #bar {
     display: block;
     width: 30%;
     align-self: flex-start;
     height: 100vh;
-    background-color: white;
+    background-color: inherit;
     margin-right: 8px;
+  }
+
+  #cat-header {
+    height: 50px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    background-color: white;
+    font-size: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  #cat {
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 500px;
+  }
+
+  #cat-list {
+    height: 50px;
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(192, 192, 192);
+  }
+
+  #cat-list:hover {
+    box-shadow: inset 1px 1px 5px rgb(177, 177, 177);
+    background-color: rgb(247, 247, 247);
   }
 }

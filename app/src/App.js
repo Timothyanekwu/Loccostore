@@ -9,6 +9,7 @@ import Head from "./components/header-component/headers";
 import Cards from "./components/Products/products";
 import Side from "./components/Sidebar/sidebar";
 import Checkout from "./components/Checkout-component/checkout";
+import ProductPage from "./Product/ProductPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Data } from "./context/context";
 import "./styles.css";
@@ -20,6 +21,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route
+            exact
             path="/"
             element={
               <div id="body">
@@ -34,7 +36,8 @@ const App = () => {
               </div>
             }
           />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route exact path="/:nam" element={<ProductPage />} />
+          <Route exact path="/checkout" element={<Checkout />} />
         </Routes>
       </Router>
     </Data>

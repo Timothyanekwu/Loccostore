@@ -9,36 +9,117 @@
   justify-content: space-between;
 }
 
+#capper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+#fil {
+  border-right: 1px dotted grey;
+}
+
+#sort,
+#fil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#cod {
+  display: none;
+}
+
 #card {
+  border-radius: 5px;
   padding: 4px;
   width: calc(50% - 4px);
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin-bottom: 30px;
+  margin-bottom: 4px;
+  height: 300px;
 }
 
-img {
+#card:hover {
+  box-shadow: 1px 1px 10px 1px rgb(163, 163, 163);
+  padding: 0px;
+}
+
+#img {
   width: 100%;
-  height: 50%;
+  height: 45%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#cap {
+  height: 35%;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#name {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-size: 12px; */
+  border-bottom: 1px solid grey;
+  height: 40px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#price {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-size: 12px; */
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 19px;
+}
+
+#sold {
+  font-size: 9px;
 }
 
 #add {
   width: 90%;
-  margin: auto;
-  background-color: gold;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f04685;
   height: 30px;
   display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  margin-top: 5%;
   margin-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#add:hover {
+  background-color: rgb(82, 82, 82);
 }
 
 /* for Tablet */
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
 
-@media only screen and (min-width: 326px) {
+@media only screen and (min-width: 426px) {
   #card-wrapper {
     width: 90%;
     justify-content: space-between;
@@ -49,22 +130,88 @@ img {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
-  img {
+  #img {
     width: 100%;
     height: 50%;
   }
 }
 
-@media only screen and (min-width: 869px) {
+/* for Laptop */
+
+@media only screen and (min-width: 769px) {
   #card {
     padding: 4px;
     width: calc(25% - 4px);
     display: flex;
     flex-direction: column;
+    height: 400px;
     background-color: white;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+  }
+
+  #capper {
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
+
+  #sort {
+    width: 100%;
+    display: flex;
+    margin-right: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  #cap {
+    height: 35%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #name {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid grey;
+  }
+
+  #price {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  #sold {
+    font-size: 10px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #cod {
+    display: block;
+    width: 100%;
+    display: flex;
+    margin-left: 50px;
+
+    align-items: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  #fil {
+    border-right: 1px dotted grey;
+    display: none;
   }
 }
