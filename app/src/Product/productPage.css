@@ -15,7 +15,7 @@
   width: 90%;
   filter: drop-shadow(0px 16px 18px #cbcbcb);
   border-radius: 8px;
-  height: auto;
+  height: 19rem;
 }
 
 #spec {
@@ -67,17 +67,19 @@
   font-style: normal;
   width: 90%;
   margin: auto;
-  margin-bottom: 20px;
 }
 
 h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  border-top: 1px solid #f04685;
+  border-top: 1px solid #4676f0;
   height: 45px;
-  border-bottom: 1px solid #f04685;
+  border-bottom: 1px solid #4676f0;
+  background-color: #f1f1f1;
   margin-top: 30px;
-  width: 90%;
+  /* width: 90%; */
+  padding-left: 20px;
   display: flex;
+  border-radius: 10px;
   font-size: 25px;
   align-items: center;
   margin-left: auto;
@@ -87,41 +89,6 @@ h3 {
 
 /*TABLET*/
 @media only screen and (min-width: 426px) {
-  #info-img-cont {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #info-img {
-    width: 100%;
-  }
-
-  #spec {
-    margin-top: 40px;
-    font-size: 24px;
-    border-bottom: 2px solid rgb(114, 114, 114);
-    padding-bottom: 12px;
-  }
-
-  #info-price {
-    font-size: 44px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  #toCart {
-    width: 119px;
-  }
-
-  h3 {
-    font-size: 40px;
-  }
-  #description {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (min-width: 769px) {
   #info-img-cont {
     width: 45%;
     margin-left: 5%;
@@ -138,8 +105,10 @@ h3 {
   }
 
   #info-img {
-    width: 100%;
-    height: auto;
+    height: 19.125rem;
+    margin: 0 auto;
+    max-width: 30.125rem;
+    vertical-align: middle;
   }
 
   #spec {
@@ -161,7 +130,104 @@ h3 {
   #description {
     font-size: 15px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: 5%;
+  }
+
+  #qty-cont {
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+
+  #change {
+    background: #f04685;
+    width: 40px;
+    height: 40px;
+    border: none;
+    justify-content: center;
+  }
+
+  #qty {
+    height: 40px;
+    width: 40px;
+    padding-left: 10px;
+  }
+
+  #sold {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 5%;
+  }
+
+  #toCart {
+    display: none;
+  }
+
+  #toCart1 {
+    display: block;
+    background: #f04685;
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+
+  h3 {
+    height: 70px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #info-img-cont {
+    width: 45%;
+    margin-left: 5%;
+    margin-right: 3%;
+  }
+
+  #sus-1 {
+    display: flex;
+  }
+
+  #sus-child-1 {
+    padding-top: 5px;
+    width: 50%;
+  }
+
+  #info-img {
+    height: 30.125rem;
+    margin: 0 auto;
+    max-width: 30.125rem;
+    vertical-align: middle;
+  }
+
+  #spec {
+    margin-top: 40px;
+    font-size: 20px;
+    padding-bottom: 12px;
+    width: 80%;
+  }
+
+  #info-price {
+    font-size: 30px;
+    width: 80%;
+  }
+
+  #toCart {
+    width: 119px;
+  }
+
+  #description {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: 5%;
   }
 
   #qty-cont {

@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react"; //uselocation\
+import { createContext, useState } from "react"; //uselocation\
 
 const FormContext = createContext();
 
@@ -53,13 +53,13 @@ export const Form = ({ children }) => {
   };
 
   const imageHandler = (e) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      if (reader.readyState === 2) {
-        setImg([...img, reader.result]);
-      }
-    };
-    reader.readAsDataURL(e.target.files[0]);
+    const files = e.target.files;
+    const filesArray = Array.from(files);
+
+    const imgArray = filesArray.map((ig) => {
+      return URL.revokeObjectURL(ig);
+    });
+    setImg([...img, ...imgArray]);
   };
 
   const submitter = async () => {

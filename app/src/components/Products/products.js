@@ -21,7 +21,7 @@ const Cards = () => {
             id="card"
             onClick={() => navigate(`/${cards.name}`)}
           >
-            <img src={cards.img} alt="" id="img" />
+            <img src={cards.img[0]} alt="" id="img" />
             <div id="cap">
               <p id="name">{cards.name}</p>
               <p id="price">N {cards.price}</p>

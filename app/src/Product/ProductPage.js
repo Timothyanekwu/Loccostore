@@ -3,10 +3,17 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import DataContext from "../context/context";
 import "./productPage.css";
+import { useState } from "react";
 
 const ProductPage = () => {
   const { items } = useContext(DataContext);
   const { nam } = useParams();
+
+  const [len, setLen] = useState(false);
+
+  const clk = () => {
+    setLen(!len);
+  };
 
   return (
     <div>
@@ -26,25 +33,26 @@ const ProductPage = () => {
                       <h2 id="spec">{item.name}</h2>
                       <p id="info-price">N {item.price}</p>
                     </div>
+
                     <div id="qty-cont">
                       <input id="change" type="button" value="+" />
                       <input id="qty" value="0" />
                       <input id="change" type="button" value="-" />
                     </div>
+
                     <p id="sold">{item.sold} sold</p>
-                    <button id="toCart1">Add to cart</button>
+                    <button id="toCart1">Buy Now</button>
                   </div>
                 </div>
-                <h3>Description</h3>
                 <div id="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  <h3>Description</h3>
+
+                  {len === true
+                    ? item.description
+                    : item.description.substr(0, 300)}
+                  <p onClick={() => clk()}>
+                    <b>Read more...</b>
+                  </p>
                 </div>
                 <button id="toCart">Add to cart</button>
 
@@ -58,3 +66,68 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
+
+//
+//     {
+//       "id": 5,
+//       "img": "/image/6.jpg",
+//       "name": "Shoe",
+//       "price": 44,
+//       "category": "shoe",
+//       "sold": 20,
+//       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+//     },
+//     {
+//       "id": 6,
+//       "img": "/image/9.jpg",
+//       "name": "Flask",
+//       "price": 46,
+//       "category": "electronics",
+//       "sold": 3,
+//       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+//     },
+//     {
+//       "id": 7,
+//       "img": "/image/9.jpg",
+//       "name": "Phone stand",
+//       "price": 40,
+//       "category": "ankara",
+//       "sold": 11,
+//       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+//     },
+//     {
+//       "id": 8,
+//       "img": "/image/1.jpg",
+//       "name": "School Bag",
+//       "price": 40,
+//       "category": "bag",
+//       "sold": 14,
+//       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+//     },
+//     {
+//       "id": 9,
+//       "img": "/image/2.jpg",
+//       "name": " Sneaker Shoe",
+//       "price": 44,
+//       "category": "shoe",
+//       "sold": 23,
+//       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+//     },
+//     {
+//       "id": 10,
+//       "img": "/image/3.jpg",
+//       "name": "Food Flask",
+//       "price": 44,
+//       "category": "electronics",
+//       "sold": 1,
+//       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+//     },
+//     {
+//       "id": 11,
+//       "img": "/image/4.jpg",
+//       "name": "Phone stand",
+//       "price": 40,
+//       "category": "ankara",
+//       "sold": 18,
+//       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+//     }
