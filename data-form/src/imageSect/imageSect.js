@@ -31,6 +31,7 @@ const ImageSect = () => {
           multiple
           accept="image/png, image/jpeg, image/jpg, image/webp"
         />
+
         <div>
           {img.map((i, index) => {
             return <img src={i} alt="" id="img" key={index} />;

@@ -5,7 +5,7 @@ const Submit = () => {
   const { submitter } = useContext(FormContext);
 
   return (
-    <button id="submit" onClick={async (e) => await submitter(e)}>
+    <button id="submit" onClick={submitter}>
       submit
     </button>
   );
