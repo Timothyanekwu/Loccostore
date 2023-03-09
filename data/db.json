@@ -2,7 +2,9 @@
   "data": [
     {
       "id": 0,
-      "img": ["/image/1.jpg"],
+      "img": [
+        "/image/1.jpg"
+      ],
       "name": "Vingage Bag: Custom made imported bag",
       "price": 40,
       "category": "bag",
@@ -11,7 +13,9 @@
     },
     {
       "id": 1,
-      "img": ["/image/2.jpg"],
+      "img": [
+        "/image/2.jpg"
+      ],
       "name": "Nike Shoes: Model 549TG Chinese",
       "price": 44,
       "category": "shoe",
@@ -20,7 +24,9 @@
     },
     {
       "id": 2,
-      "img": ["/image/3.jpg"],
+      "img": [
+        "/image/3.jpg"
+      ],
       "name": "Loga Flask: twin pack for children",
       "price": 44,
       "category": "electronics",
@@ -29,7 +35,9 @@
     },
     {
       "id": 3,
-      "img": ["/image/4.jpg"],
+      "img": [
+        "/image/4.jpg"
+      ],
       "name": "JBL Phone stand for phones",
       "price": 40,
       "category": "ankara",
@@ -38,13 +46,73 @@
     },
     {
       "id": 4,
-      "img": ["/image/5.jpg"],
+      "img": [
+        "/image/5.jpg"
+      ],
       "name": "Bag",
       "price": 40,
       "category": "bag",
       "sold": 21,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+    },
+    {
+      "id": 0.7120816218807355,
+      "img": [
+        "https://res.cloudinary.com/dvcam4i4t/image/upload/v1676081797/ngobyzwozfhioqrprcdk.jpg",
+        "https://res.cloudinary.com/dvcam4i4t/image/upload/v1676081806/cp6wjudtz6ixuk8j5hza.jpg"
+      ],
+      "title": "LDNIO LC102 Type C to Type C PD USB Cable Output 65W",
+      "brand": "LDNIO ",
+      "description": "jhvtyrtuvbinlkm;';",
+      "price": "",
+      "disPrice": "",
+      "quantity": ""
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 0.6641764140872746,
+      "img": [
+        "/image/2.jpg"
+      ],
+      "name": "Nike Shoes: Model 549TG Chinese",
+      "price": 44,
+      "category": "shoe",
+      "sold": 1,
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+    },
+    {
+      "id": 0.9239866041121985,
+      "img": [
+        "/image/2.jpg"
+      ],
+      "name": "Nike Shoes: Model 549TG Chinese",
+      "price": 44,
+      "category": "shoe",
+      "sold": 1,
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+    },
+    {
+      "id": 0.6367532454917557,
+      "img": [
+        "/image/1.jpg"
+      ],
+      "name": "Vingage Bag: Custom made imported bag",
+      "price": 40,
+      "category": "bag",
+      "sold": 23,
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+    },
+    {
+      "id": 0.9478205977415552,
+      "img": [
+        "/image/2.jpg"
+      ],
+      "name": "Nike Shoes: Model 549TG Chinese",
+      "price": 44,
+      "category": "shoe",
+      "sold": 1,
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
+    }
+  ]
 }

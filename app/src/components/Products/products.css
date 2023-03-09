@@ -1,12 +1,13 @@
-#card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 100%;
+#main-wrapper {
   width: 100%;
-  flex: 0 1 auto;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+}
+
+#card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8px;
 }
 
 #capper {
@@ -29,8 +30,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #cod {
@@ -40,12 +40,9 @@
 #card {
   border-radius: 5px;
   padding: 4px;
-  width: calc(50% - 4px);
-  display: flex;
-  flex-direction: column;
   background-color: white;
   margin-bottom: 4px;
-  height: 300px;
+  height: 60vh;
 }
 
 #card:hover {
@@ -53,9 +50,8 @@
   padding: 0px;
 }
 
-#img {
-  width: 100%;
-  height: 45%;
+.img {
+  height: 50%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -68,30 +64,22 @@
 }
 
 #name {
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  /* font-size: 12px; */
   border-bottom: 1px solid grey;
-  height: 40px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding-bottom: 5px;
 }
 
 #price {
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  /* font-size: 12px; */
-
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 19px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #sold {
   font-size: 9px;
+  font-family: "Roboto", sans-serif;
 }
 
 #add {
@@ -99,15 +87,14 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #f04685;
-  height: 30px;
+  height: 40px;
   display: flex;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
+  font-weight: 500;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5px;
+
   border-radius: 5px;
   color: white;
 }
@@ -120,17 +107,19 @@
 /* 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
 
 @media only screen and (min-width: 426px) {
-  #card-wrapper {
+  #main-wrapper {
     width: 90%;
     justify-content: space-between;
   }
 
+  #card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   #card {
-    width: calc(33.3% - 4px);
-    display: flex;
-    flex-direction: column;
     background-color: white;
     margin-bottom: 5px;
+    height: 70vh;
   }
 
   #img {
@@ -142,12 +131,16 @@
 /* for Laptop */
 
 @media only screen and (min-width: 769px) {
+  #main-wrapper {
+    width: 75%;
+  }
+  #card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   #card {
     padding: 4px;
-    width: calc(25% - 4px);
-    display: flex;
-    flex-direction: column;
-    height: 400px;
+    height: 60vh;
     background-color: white;
     margin-bottom: 5px;
   }
@@ -178,23 +171,18 @@
   }
 
   #name {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
     font-size: 15px;
     border-bottom: 1px solid grey;
   }
 
   #price {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 5px;
   }
 
   #sold {
     font-size: 10px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   #cod {

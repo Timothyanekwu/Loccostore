@@ -31,7 +31,6 @@ const App = () => {
                   <Side />
                   <Cards />
                 </div>
-
                 <Footer />
               </div>
             }

@@ -8,7 +8,6 @@ import { useState } from "react";
 const ProductPage = () => {
   const { items } = useContext(DataContext);
   const { nam } = useParams();
-
   const [len, setLen] = useState(false);
 
   const clk = () => {
@@ -16,47 +15,51 @@ const ProductPage = () => {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: "#f7f7f7" }}>
       <Head />
       <div>
         {items
           .filter((item) => item.name === nam)
           .map((item) => {
             return (
-              <div id="specification">
-                <div id="sus-1">
-                  <div id="info-img-cont">
-                    <img id="info-img" src={item.img} alt="" />
-                  </div>
-                  <div id="sus-child-1">
-                    <div>
-                      <h2 id="spec">{item.name}</h2>
-                      <p id="info-price">N {item.price}</p>
+              <div>
+                <div id="specification">
+                  <div id="sus-1">
+                    <div id="info-img-cont">
+                      <img id="info-img" src={item.img} alt="" />
                     </div>
+                    <div id="sus-child-1">
+                      <div>
+                        <h2 id="spec">{item.name}</h2>
+                        <p id="info-price">N {item.price}</p>
+                      </div>
 
-                    <div id="qty-cont">
-                      <input id="change" type="button" value="+" />
-                      <input id="qty" value="0" />
-                      <input id="change" type="button" value="-" />
+                      <div id="qty-cont">
+                        <input id="change" type="button" value="+" />
+                        <input id="qty" value="0" />
+                        <input id="change" type="button" value="-" />
+                      </div>
+
+                      <p id="sold">{item.sold} sold</p>
+                      <button id="toCart1">Buy Now</button>
                     </div>
-
-                    <p id="sold">{item.sold} sold</p>
-                    <button id="toCart1">Buy Now</button>
                   </div>
                 </div>
                 <div id="description">
-                  <h3>Description</h3>
+                  <div>
+                    <p id="h4">DESCRIPTION</p>
 
-                  {len === true
-                    ? item.description
-                    : item.description.substr(0, 300)}
-                  <p onClick={() => clk()}>
-                    <b>Read more...</b>
-                  </p>
+                    {len === true
+                      ? item.description
+                      : item.description.substr(0, 300)}
+                    <p onClick={() => clk()}>
+                      <b>Read more...</b>
+                    </p>
+                  </div>
+                  <button id="toCart">Add to cart</button>
+
+                  <div id="footer"></div>
                 </div>
-                <button id="toCart">Add to cart</button>
-
-                <div id="footer"></div>
               </div>
             );
           })}
