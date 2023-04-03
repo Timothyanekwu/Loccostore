@@ -1,14 +1,7 @@
 #specification {
-  height: 600px;
-  background: linear-gradient(
-    to left bottom,
-    rgb(255, 255, 255),
-    rgba(230, 230, 230, 0.93),
-    rgba(255, 255, 255, 0.753)
-  );
+  height: max-content;
+  background-color: white;
   margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 #info-img-cont {
@@ -59,11 +52,6 @@
   padding: 10px;
   background-color: white;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(
-    to right bottom,
-    rgb(255, 255, 255),
-    rgba(230, 230, 230, 0.93)
-  );
 }
 
 #h4 {
@@ -105,13 +93,6 @@
     width: 80%;
   }
 
-  #toCart {
-    width: 119px;
-  }
-
-  #description {
-  }
-
   #qty-cont {
     margin-left: 5%;
     margin-top: 15px;
@@ -137,10 +118,6 @@
     margin-left: 5%;
   }
 
-  #toCart {
-    display: none;
-  }
-
   #toCart1 {
     display: block;
     background: #f04685;
@@ -162,9 +139,6 @@
 /* LAPTOP */
 @media only screen and (min-width: 769px) {
   #specification {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 55px;
   }
 
@@ -177,7 +151,10 @@
   }
 
   #sus-child-1 {
-    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     width: 50%;
   }
 
@@ -200,9 +177,9 @@
   }
 
   #description {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 49%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #qty-cont {

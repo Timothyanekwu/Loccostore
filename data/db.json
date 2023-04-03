@@ -7,7 +7,7 @@
       ],
       "name": "Vingage Bag: Custom made imported bag",
       "price": 40,
-      "category": "bag",
+      "category": "Fashion",
       "sold": 23,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
@@ -17,8 +17,8 @@
         "/image/2.jpg"
       ],
       "name": "Nike Shoes: Model 549TG Chinese",
-      "price": 44,
-      "category": "shoe",
+      "price": 41,
+      "category": "Fashion",
       "sold": 1,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
@@ -28,8 +28,8 @@
         "/image/3.jpg"
       ],
       "name": "Loga Flask: twin pack for children",
-      "price": 44,
-      "category": "electronics",
+      "price": 42,
+      "category": "Electronics",
       "sold": 9,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
@@ -39,8 +39,8 @@
         "/image/4.jpg"
       ],
       "name": "JBL Phone stand for phones",
-      "price": 40,
-      "category": "ankara",
+      "price": 43,
+      "category": "Fashion",
       "sold": 16,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
@@ -50,68 +50,74 @@
         "/image/5.jpg"
       ],
       "name": "Bag",
-      "price": 40,
-      "category": "bag",
+      "price": 44,
+      "category": "Fashion",
       "sold": 21,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
     {
-      "id": 0.7120816218807355,
+      "id": 0.06943227192750667,
       "img": [
-        "https://res.cloudinary.com/dvcam4i4t/image/upload/v1676081797/ngobyzwozfhioqrprcdk.jpg",
-        "https://res.cloudinary.com/dvcam4i4t/image/upload/v1676081806/cp6wjudtz6ixuk8j5hza.jpg"
+        "https://res.cloudinary.com/dvcam4i4t/image/upload/v1678667660/jeumrwqexqidbcsfxsjr.jpg",
+        null,
+        "https://res.cloudinary.com/dvcam4i4t/image/upload/v1678667679/vmqbfpysra0uti04ogz7.jpg"
       ],
+      "category": "Electronics",
       "title": "LDNIO LC102 Type C to Type C PD USB Cable Output 65W",
-      "brand": "LDNIO ",
-      "description": "jhvtyrtuvbinlkm;';",
-      "price": "",
+      "brand": "Oraimo",
+      "description": "Features:\n-Applies to household kitchen food weighing.\n-Weighing accuracy is high.\n-Automatic tare, automatic calibration.\nPackage include: 1×Kitchen Scale\nProduct name: kitchen scale\nProduct color: white\nMaterial: plastic,electronic component\nApplies to household kitchen food weighing\nMeasuring range: 0.001~2.5KG\nAutomatic tare, automatic calibration",
+      "price": 45,
       "disPrice": "",
-      "quantity": ""
+      "quantity": "33"
     }
   ],
   "cart": [
     {
-      "id": 0.6641764140872746,
+      "id": 0.26503415352982085,
       "img": [
-        "/image/2.jpg"
+        "/image/5.jpg"
       ],
-      "name": "Nike Shoes: Model 549TG Chinese",
-      "price": 44,
-      "category": "shoe",
-      "sold": 1,
+      "name": "Bag",
+      "price": 40,
+      "category": "Fashion",
+      "sold": 21,
+      "orderNumber": 46743,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
     {
-      "id": 0.9239866041121985,
+      "orderNumber": 7791.911596362828,
+      "id": 0.4002366019508856,
       "img": [
-        "/image/2.jpg"
+        "/image/5.jpg"
       ],
-      "name": "Nike Shoes: Model 549TG Chinese",
-      "price": 44,
-      "category": "shoe",
-      "sold": 1,
+      "name": "Bag",
+      "price": 40,
+      "category": "Fashion",
+      "sold": 21,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
     {
-      "id": 0.6367532454917557,
+      "orderNumber": 4819.066190011376,
+      "id": 0.3733279384573931,
       "img": [
         "/image/1.jpg"
       ],
       "name": "Vingage Bag: Custom made imported bag",
       "price": 40,
-      "category": "bag",
+      "category": "Fashion",
       "sold": 23,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     },
     {
-      "id": 0.9478205977415552,
+      "orderNumber": 1917.0824442120393,
+      "id": 0.6494458561322858,
       "img": [
-        "/image/2.jpg"
+        "/image/1.jpg"
       ],
-      "name": "Nike Shoes: Model 549TG Chinese",
-      "price": 44,
-      "category": "shoe",
-      "sold": 1,
+      "name": "Vingage Bag: Custom made imported bag",
+      "price": 40,
+      "category": "Fashion",
+      "sold": 23,
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum "
     }
   ]

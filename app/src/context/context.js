@@ -7,6 +7,11 @@ export const Data = ({ children }) => {
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(1);
   const [desk, setDesk] = useState(window.innerWidth);
+  const [priceRange, setPriceRange] = useState(Array(2));
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(0);
+  const [SideCartView, setSideCartView] = useState(false);
+
   // const [product, setProduct] = useState(prod);
 
   useEffect(() => {
@@ -27,6 +32,7 @@ export const Data = ({ children }) => {
   const up = () => {
     setDesk(window.innerWidth);
   };
+
   useEffect(() => {
     window.addEventListener("resize", up);
     return () => window.removeEventListener("resize", up);
@@ -39,7 +45,7 @@ export const Data = ({ children }) => {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify(product),
+      body: JSON.stringify({ orderNumber: Math.random() * 10000, ...product }),
     });
 
     const result = res.json();
@@ -55,6 +61,24 @@ export const Data = ({ children }) => {
     setCart(cart.filter((item) => item.id !== id));
   };
 
+  const priceFilter = (e) => {
+    if (e.target.id === "minPrice") {
+      setMinPrice(e.target.value);
+    }
+
+    if (e.target.id === "maxPrice") {
+      setMaxPrice(e.target.value);
+    }
+  };
+
+  const priceFilterSubmit = () => {
+    const filteredProducts = items.filter(
+      (product) => product.price >= minPrice && product.price <= maxPrice
+    );
+
+    setItems(filteredProducts);
+  };
+
   /* */
 
   return (
@@ -63,10 +87,14 @@ export const Data = ({ children }) => {
         items,
         addCart,
         setItems,
+        priceFilter,
+        priceFilterSubmit,
         cart,
         desk,
         total,
         setTotal,
+        SideCartView,
+        setSideCartView,
         del,
       }}
     >

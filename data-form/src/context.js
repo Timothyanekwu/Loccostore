@@ -17,6 +17,8 @@ export const Form = ({ children }) => {
     quantity: "",
   });
   const [seo, setSeo] = useState("");
+  const [catView, setCatView] = useState(false);
+  const [cat, setCat] = useState("");
   // useEffect(() => {
   //   const res = async () => {
   //     const a = await fetch("http://localhost:5000/data");
@@ -27,6 +29,24 @@ export const Form = ({ children }) => {
   // }, []);
 
   //logic control
+
+  const categories = [
+    "Automobile",
+    "Baby Products",
+    "Books, Movies and Music",
+    "Computing",
+    "Electronics",
+    "Fashion",
+    "Gaming",
+    "Garden & Outdoors",
+    "Grocery",
+    "Health & Beauty",
+    "Home & Office",
+    "Industrial & Scientific",
+    "Musical Instruments",
+    "Pet Supplies",
+  ];
+
   const titleChange = (e) => {
     if (e.target.id === "brand") {
       setDetail({ ...detail, brand: e.target.value });
@@ -103,10 +123,20 @@ export const Form = ({ children }) => {
       body: JSON.stringify({
         id: Math.random(),
         img: img,
+        category: cat,
         ...detail,
         ...variant,
       }),
     });
+  };
+
+  const view = () => {
+    setCatView(!catView);
+  };
+
+  const inputCat = (inp) => {
+    setCat(inp);
+    setCatView(false);
   };
 
   return (
@@ -121,6 +151,12 @@ export const Form = ({ children }) => {
         imageHandler,
         img,
         submitter,
+        categories,
+        view,
+        catView,
+        setCat,
+        cat,
+        inputCat,
       }}
     >
       {children}

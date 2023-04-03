@@ -22,7 +22,13 @@ const ProductPage = () => {
           .filter((item) => item.name === nam)
           .map((item) => {
             return (
-              <div>
+              <div
+                style={{
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  width: "80%",
+                }}
+              >
                 <div id="specification">
                   <div id="sus-1">
                     <div id="info-img-cont">
@@ -40,25 +46,47 @@ const ProductPage = () => {
                         <input id="change" type="button" value="-" />
                       </div>
 
-                      <p id="sold">{item.sold} sold</p>
+                      <div>
+                        <p id="sold">{item.sold} sold</p>
+                        <p id="sold">inStock</p>
+                      </div>
                       <button id="toCart1">Buy Now</button>
                     </div>
                   </div>
                 </div>
-                <div id="description">
-                  <div>
-                    <p id="h4">DESCRIPTION</p>
+                <div
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <div id="description">
+                    <div>
+                      <p id="h4">DESCRIPTION</p>
 
-                    {len === true
-                      ? item.description
-                      : item.description.substr(0, 300)}
-                    <p onClick={() => clk()}>
-                      <b>Read more...</b>
-                    </p>
+                      {len === true
+                        ? item.description
+                        : item.description.substr(0, 300)}
+                      <p onClick={() => clk()}>
+                        <b>Read more...</b>
+                      </p>
+                    </div>
                   </div>
-                  <button id="toCart">Add to cart</button>
 
-                  <div id="footer"></div>
+                  <div id="description">
+                    <div>
+                      <p id="h4">FEATURES</p>
+
+                      {len === true
+                        ? item.description
+                        : item.description.substr(0, 300)}
+                      <p onClick={() => clk()}>
+                        <b>Read more...</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="review">
+                  <div>
+                    <p id="h4">REVIEW</p>
+                  </div>
                 </div>
               </div>
             );

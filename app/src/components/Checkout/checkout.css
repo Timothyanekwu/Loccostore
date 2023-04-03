@@ -1,0 +1,62 @@
+#deliveryInfo {
+  background-color: white;
+  width: 30%;
+  height: 60vh;
+  border-radius: 7px;
+  margin-left: 10vw;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#info-title,
+#schedule-title,
+#payment-title {
+  padding: 0 5px 0px 5px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  height: 5vh;
+  margin-bottom: 10px;
+}
+
+#delivery-info > label {
+  font-family: "Roboto" sans-serif;
+}
+
+#deliveryInput,
+#date {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  height: 5vh;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+#note {
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  margin-top: 4px;
+  height: 15vh;
+  margin-bottom: 12px;
+}
+
+#scheduleDelivery {
+  background-color: white;
+  width: 30%;
+  border-radius: 7px;
+  margin-left: 10vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#paymentMeth {
+  background-color: white;
+  width: 30%;
+  height: 20vh;
+  border-radius: 7px;
+  margin-left: 10vw;
+  margin-top: 30px;
+  padding: 20px;
+}

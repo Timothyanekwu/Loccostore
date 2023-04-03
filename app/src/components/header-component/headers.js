@@ -1,10 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import DataContext from "../../context/context";
 import { MdHelpOutline } from "react-icons/md";
+import { TiShoppingCart } from "react-icons/ti";
+import SideCart from "../Side-cart/SideCart";
 import "./header.css";
 
 const Head = () => {
-  const { desk, cart } = useContext(DataContext);
+  const { desk, cart, SideCartView, setSideCartView } = useContext(DataContext);
 
   return (
     <div id="head">
@@ -23,6 +25,8 @@ const Head = () => {
               {/* <div id="help">Help</div> */}
               <MdHelpOutline id="help" />
               <div id="cart-number">{cart.length}</div>
+
+              <TiShoppingCart onClick={() => setSideCartView(true)} />
             </div>
           </div>
         </div>
@@ -44,6 +48,7 @@ const Head = () => {
           </div>
         </div>
       )}
+      {SideCartView === true ? <SideCart /> : ""}
     </div>
   );
 };

@@ -8,7 +8,8 @@
 import Head from "./components/header-component/headers";
 import Cards from "./components/Products/products";
 import Side from "./components/Sidebar/sidebar";
-import Checkout from "./components/Checkout-component/checkout";
+import Checkout from "./components/Checkout/Checkout";
+import Cart from "./components/cart-component/cart";
 import ProductPage from "./Product/ProductPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Data } from "./context/context";
@@ -36,6 +37,7 @@ const App = () => {
             }
           />
           <Route exact path="/:nam" element={<ProductPage />} />
+          <Route exact path="/cart" element={<Cart />} />
           <Route exact path="/checkout" element={<Checkout />} />
         </Routes>
       </Router>

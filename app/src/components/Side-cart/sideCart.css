@@ -1,0 +1,153 @@
+#sideContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  right: 0;
+  left: auto;
+}
+
+#sideContTitle {
+  height: 80px;
+  border-bottom: 1px solid;
+  width: 95%;
+  padding: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sideContTitle > p {
+  height: auto;
+}
+
+#sideContFooter {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+
+#itemContent > p {
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+  height: 30%;
+}
+
+#viewCart,
+#checkout {
+  height: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+#viewCart {
+  background-color: #f04685;
+  border-radius: 5px;
+  font-size: medium;
+  color: white;
+}
+
+#viewCart:hover {
+  background-color: #e00052;
+}
+
+#checkout {
+  background-color: #4676f0;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+}
+
+#checkout:hover {
+  background-color: #0e4ae0;
+}
+
+#sideContItems {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+#sideContItems > div {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 0 5px;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+#sideContItems > div:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+#sideContImage {
+  width: 70px;
+  height: 70px;
+}
+
+#sideContImage > img {
+  width: inherit;
+  height: 100%;
+}
+
+#itemContent {
+  height: 100%;
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#qtySetter {
+  display: flex;
+  height: 50%;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+#qtySetter > input {
+  text-align: center;
+  width: 25px;
+  border-style: none;
+}
+
+#qtySetter > span {
+  border-radius: 3px;
+  display: block;
+  width: 20px;
+  background-color: #f04685;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sideContReview {
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#sideContReview > #sideSubtotal {
+  font-size: medium;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+#sideContReview > #sideContTotal {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  align-items: flex-end;
+}

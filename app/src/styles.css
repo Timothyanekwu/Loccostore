@@ -5,11 +5,7 @@
 }
 
 #body {
-  background: linear-gradient(
-    to left bottom,
-    rgb(243, 243, 243),
-    rgb(250, 250, 250)
-  );
+  background-color: rgb(224, 224, 224);
 }
 
 #products {
@@ -21,11 +17,7 @@
 /* 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
 @media only screen and (min-width: 426px) {
   #body {
-    background: linear-gradient(
-      to left bottom,
-      rgb(240, 240, 240),
-      rgb(250, 250, 250)
-    );
+    background-color: rgb(224, 224, 224);
   }
 
   #products {
@@ -42,11 +34,7 @@
 
 @media only screen and (min-width: 769px) {
   #body {
-    background: linear-gradient(
-      to left bottom,
-      rgb(247, 247, 247),
-      rgb(250, 250, 250)
-    );
+    background-color: rgb(247, 247, 247);
   }
 
   #products {

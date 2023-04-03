@@ -1,0 +1,29 @@
+#price-filter {
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#range {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+#range-cont {
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 45%;
+}
+
+#range-cont > p {
+  padding: 5px 0 5px 5px;
+  font-size: 13px;
+}
+
+#minPrice,
+#maxPrice {
+  width: 100%;
+  border-style: none;
+  height: 30px;
+}

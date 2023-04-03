@@ -17,7 +17,7 @@ const Footer = () => {
       </span>
       <span>
         <input placeholder="e-mail" id="inpt" />
-        <submit />
+        <button />
       </span>
     </footer>
   );
