@@ -118,7 +118,8 @@
     margin-left: 5%;
   }
 
-  #toCart1 {
+  #toCart1,
+  #buyNow {
     display: block;
     background: #f04685;
     height: 40px;
@@ -130,6 +131,11 @@
     font-size: 15px;
     margin-left: 5%;
     margin-top: 10px;
+  }
+
+  #buyNow {
+    background-color: #4676f0;
+    margin-bottom: 5px;
   }
 
   h3 {

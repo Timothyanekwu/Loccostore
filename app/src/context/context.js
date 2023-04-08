@@ -7,10 +7,24 @@ export const Data = ({ children }) => {
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(1);
   const [desk, setDesk] = useState(window.innerWidth);
-  const [priceRange, setPriceRange] = useState(Array(2));
+  // const [priceRange, setPriceRange] = useState(Array(2));
+  // sideCart
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(0);
   const [SideCartView, setSideCartView] = useState(false);
+  // checkout Page > delivery Info
+  const [firstName, setFirstName] = useState("");
+  const [surName, setSurName] = useState("");
+  const [phone, setPhone] = useState(0);
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [state, setState] = useState("");
+  // checkoutPage > schedule Delivery
+  const [scheduleToggle, setScheduleToggle] = useState(false);
+  // checkoutPage > Payment Method
+  const [oPayment, setOPayment] = useState(false);
+  const [transPayment, setTransPayment] = useState(false);
+  const [codPayment, setCodPayment] = useState(false);
 
   // const [product, setProduct] = useState(prod);
 
@@ -79,6 +93,33 @@ export const Data = ({ children }) => {
     setItems(filteredProducts);
   };
 
+  const checkoutInfoHandler = (e) => {
+    switch (e.target.id) {
+      case "firstName":
+        setFirstName(e.target.value);
+        break;
+      case "surName":
+        setSurName(e.target.value);
+        break;
+      case "phone":
+        setPhone(e.target.value);
+        break;
+      case "email":
+        setEmail(e.target.value);
+        break;
+      case "address":
+        setAddress(e.target.value);
+        break;
+      case "state":
+        setState(e.target.value);
+        break;
+    }
+  };
+
+  const toggle = () => {
+    setScheduleToggle(!scheduleToggle);
+  };
+
   /* */
 
   return (
@@ -90,12 +131,27 @@ export const Data = ({ children }) => {
         priceFilter,
         priceFilterSubmit,
         cart,
+        del,
         desk,
         total,
         setTotal,
         SideCartView,
         setSideCartView,
-        del,
+        checkoutInfoHandler,
+        firstName,
+        surName,
+        phone,
+        email,
+        address,
+        scheduleToggle,
+        state,
+        oPayment,
+        transPayment,
+        codPayment,
+        setOPayment,
+        setTransPayment,
+        setCodPayment,
+        toggle,
       }}
     >
       {children}

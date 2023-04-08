@@ -50,7 +50,8 @@ const ProductPage = () => {
                         <p id="sold">{item.sold} sold</p>
                         <p id="sold">inStock</p>
                       </div>
-                      <button id="toCart1">Buy Now</button>
+                      <button id="toCart1">Add to cart</button>
+                      <button id="buyNow">Buy Now</button>
                     </div>
                   </div>
                 </div>

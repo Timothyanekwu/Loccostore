@@ -1,10 +1,19 @@
+#checkoutContainer {
+  width: 50%;
+}
+
+#ordNum {
+  margin-left: 10vw;
+  margin-top: 40px;
+  padding: 20px;
+}
 #deliveryInfo {
   background-color: white;
-  width: 30%;
-  height: 60vh;
+  width: 100%;
+  height: 70vh;
   border-radius: 7px;
   margin-left: 10vw;
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -19,16 +28,23 @@
   margin-bottom: 10px;
 }
 
+#schedule-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #delivery-info > label {
   font-family: "Roboto" sans-serif;
 }
 
-#deliveryInput,
+.deliveryInput,
 #date {
   border: 1px solid rgb(221, 221, 221);
   border-radius: 3px;
   height: 5vh;
   margin-top: 4px;
+  width: 40%;
   margin-bottom: 12px;
 }
 
@@ -42,7 +58,7 @@
 
 #scheduleDelivery {
   background-color: white;
-  width: 30%;
+  width: 100%;
   border-radius: 7px;
   margin-left: 10vw;
   margin-top: 30px;
@@ -53,10 +69,39 @@
 
 #paymentMeth {
   background-color: white;
-  width: 30%;
+  width: 100%;
   height: 20vh;
   border-radius: 7px;
   margin-left: 10vw;
   margin-top: 30px;
   padding: 20px;
+}
+
+#toggleOn {
+  color: #4676f0;
+  animation-name: animOn;
+  animation-duration: 0.4s;
+}
+
+#toggleOff {
+  color: rgb(148, 148, 148);
+}
+
+@keyframes animOn {
+  0% {
+    color: rgb(207, 207, 207);
+  }
+  100% {
+    color: #4676f0;
+  }
+}
+
+#placeOrd {
+  width: 180px;
+  height: 40px;
+  border-style: none;
+  background-color: #f04685;
+  margin-bottom: 30px;
+  margin-left: 10vw;
+  margin-top: 30px;
 }
